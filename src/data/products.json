@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "nombre": "Acer Nitro V Gaming Laptop",
+    "specs": "Intel Core i5-13420H, RTX 4050, 8GB DDR5, 512GB SSD",
+    "precio": "749.99",
+    "link": "https://amzn.to",
+    "imagen": "https://amzn.to/4lDeXqd",
+    "categoria": "Gaming"
+  },
+  {
+    "id": "2",
+    "nombre": "ASUS Vivobook 16 Laptop",
+    "specs": "Intel Core i7-1255U, 16GB RAM, 512GB SSD",
+    "precio": "599.00",
+    "link": "https://amzn.to",
+    "imagen": "https://amzn.to/4lDeXqd",
+    "categoria": "Oficina"
+  },
+  {
+    "id": "3",
+    "nombre": "SAMSUNG 14\" Galaxy Book4",
+    "specs": "Intel Core 7, 16GB RAM, 512GB SSD, Pantalla FHD",
+    "precio": "849.00",
+    "link": "https://amzn.to",
+    "imagen": "https://amzn.to/4lDeXqd",
+    "categoria": "Premium"
+  }
+]
