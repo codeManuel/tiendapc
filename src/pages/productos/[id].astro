@@ -1,6 +1,8 @@
 ---
 // 1. Importas tus datos
 import products from '../../data/products.json'; // Mueve products.json a src/data/ y ajusta la ruta
+import Header from '../../components/header.astro';
+
 
 // 2. Le dices a Astro qué páginas crear basándose en el ID
 export async function getStaticPaths() {
@@ -13,7 +15,7 @@ export async function getStaticPaths() {
 // 3. Recibes los datos de la laptop específica para esta página
 const { product } = Astro.props;
 ---
-
+<Header />
 <html lang="es">
   <head>
     <meta charset="utf-8" />

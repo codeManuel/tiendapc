@@ -1,0 +1,26 @@
+---
+// Header.astro
+---
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    
+    <!-- LOGO: Apunta al inicio -->
+    <a href="/" class="flex items-center gap-2 group">
+      <div class="bg-blue-600 p-1.5 rounded-lg group-hover:bg-orange-500 transition-all duration-300">
+        <svg xmlns="http://www.w3.org" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2"></path></svg>
+      </div>
+      <span class="text-xl font-black tracking-tighter text-gray-900">LAPTOP<span class="text-blue-600">PRO</span></span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="/" class="text-sm font-bold text-gray-700 hover:text-blue-600">Catalogo</a>
+      <!-- MEJOR OFERTA: Apunta a un ID específico de tu JSON -->
+      <a href="/productos/2" class="text-sm font-bold text-gray-700 hover:text-blue-600">Mejor Oferta</a>
+      
+      <!-- AMAZON STORE: Enlace externo con tu TAG -->
+      <a href="https://www.amazon.com" target="_blank" rel="nofollow" class="bg-orange-500 text-white px-5 py-2 rounded-full text-xs font-black hover:bg-orange-600 shadow-md">
+        Amazon Store
+      </a>
+    </nav>
+  </div>
+</header>
