@@ -2,6 +2,8 @@
 // 1. Importaciones
 import products from '../../data/products.json';
 import Header from '../../components/header.astro';
+import Footer from '../../components/footer.astro';
+import '../../styles/global.css';
 
 // 2. Rutas dinámicas
 export async function getStaticPaths() {
@@ -93,5 +95,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://tu-tiend
         </a>
       </div>
     </main>
+    <Footer />
   </body>
 </html>

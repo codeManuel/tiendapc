@@ -1,0 +1,55 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-gray-900 text-gray-300 pt-16 pb-8 mt-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+      
+      <!-- COLUMNA 1: BRANDING -->
+      <div class="space-y-4">
+        <a href="/" class="flex items-center gap-2">
+          <div class="bg-blue-600 p-1.5 rounded-lg">
+            <svg xmlns="http://www.w3.org" class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2"></path></svg>
+          </div>
+          <span class="text-xl font-black tracking-tighter text-white uppercase">
+            Laptop<span class="text-blue-500">Affiliate</span>
+          </span>
+        </a>
+        <p class="text-sm leading-relaxed text-gray-400">
+          Tu guía de confianza para encontrar la mejor tecnología al mejor precio. Analizamos las mejores ofertas de Amazon para que tú solo tengas que elegir.
+        </p>
+      </div>
+
+      <!-- COLUMNA 2: ENLACES LEGALES -->
+      <div>
+        <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Información Legal</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-blue-400 transition-colors">Aviso Legal</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition-colors">Política de Privacidad</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition-colors">Política de Cookies</a></li>
+          <li><a href="#" class="hover:text-blue-400 transition-colors">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- COLUMNA 3: AVISO OBLIGATORIO DE AMAZON -->
+      <div class="bg-gray-800/50 p-6 rounded-2xl border border-gray-700">
+        <h3 class="text-orange-400 font-bold mb-3 uppercase text-[10px] tracking-widest italic">Divulgación de Afiliado</h3>
+        <p class="text-[11px] leading-relaxed text-gray-400 italic">
+          "En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables. Los precios y la disponibilidad de los productos son precisos a la fecha de publicación y están sujetos a cambios."
+        </p>
+      </div>
+
+    </div>
+
+    <!-- BARRA INFERIOR -->
+    <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-xs text-gray-500">
+        &copy; {currentYear} LaptopAffiliate. Todos los derechos reservados.
+      </p>
+      <div class="flex gap-6">
+        <span class="text-[10px] text-gray-600 uppercase font-bold tracking-widest">Desarrollado con Astro & Tailwind</span>
+      </div>
+    </div>
+  </div>
+</footer>
