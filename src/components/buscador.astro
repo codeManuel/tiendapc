@@ -1,8 +1,8 @@
 ---
 // buscador.astro
 ---
-<div class="max-w-6xl mx-auto px-10 mb-10 -mt-8 relative z-20">
-  <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 space-y-6">
+<div class="max-w-6xl mx-auto px-4 md:px-10 mb-10 -mt-8 relative z-20">
+  <div class="bg-white p-5 md:p-6 rounded-2xl shadow-xl border border-gray-100 space-y-6">
     
     <!-- BUSCADOR DE TEXTO LIBRE -->
     <div class="relative max-w-2xl mx-auto">
@@ -15,33 +15,44 @@
         type="text" 
         id="text-search" 
         placeholder="Busca por modelo, procesador, RAM (ej: Ryzen 7, 16GB)..." 
-        class="block w-full pl-10 pr-3 py-4 border border-gray-200 rounded-xl leading-5 bg-gray-50 placeholder-gray-400 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all sm:text-sm"
+        class="block w-full pl-10 pr-3 py-3 md:py-4 border border-gray-200 rounded-xl leading-5 bg-gray-50 placeholder-gray-400 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-sm"
       />
     </div>
 
-    <!-- SELECTOR DE MARCAS (Tus botones actuales) -->
-    <div class="flex flex-wrap gap-2 justify-center items-center pt-2 border-t border-gray-50">
-      <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest mr-2">O filtra por marca:</span>
-      <button class="filter-btn active bg-blue-600 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-md" data-brand="todas">Todas</button>
-      <button class="filter-btn bg-gray-50 text-gray-600 px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-50" data-brand="Acer">Acer</button>
-      <button class="filter-btn bg-gray-50 text-gray-600 px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-50" data-brand="HP">HP</button>
-      <button class="filter-btn bg-gray-50 text-gray-600 px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-50" data-brand="Apple">Apple</button>
-      <button class="filter-btn bg-gray-50 text-gray-600 px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-50" data-brand="Lenovo">Lenovo</button>
-      <button class="filter-btn bg-gray-50 text-gray-600 px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-50" data-brand="ASUS">ASUS</button>
+    <!-- SELECTOR DE MARCAS DESLIZABLE -->
+    <div class="flex flex-col gap-2 pt-2 border-t border-gray-50">
+      <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest text-center md:text-left mb-1">O filtra por marca:</span>
+      
+      <!-- Contenedor con scroll horizontal en móvil, centrado en PC -->
+      <!-- Cambia tu div por este -->
+<div class="flex overflow-x-auto flex-nowrap gap-3 pb-4 scrollbar-hide snap-x touch-pan-x w-full px-2 justify-start md:justify-center" style="touch-action: pan-x;">
+
+    <button class="filter-btn active whitespace-nowrap snap-center bg-blue-600 text-white px-5 py-2 rounded-xl text-xs font-bold shadow-md shrink-0 transition-all" data-brand="todas">Todas</button>
+    <button class="filter-btn whitespace-nowrap snap-center bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold hover:bg-blue-50 shrink-0 border border-gray-100 transition-all" data-brand="Acer">Acer</button>
+    <button class="filter-btn whitespace-nowrap snap-center bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold hover:bg-blue-50 shrink-0 border border-gray-100 transition-all" data-brand="HP">HP</button>
+    <button class="filter-btn whitespace-nowrap snap-center bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold hover:bg-blue-50 shrink-0 border border-gray-100 transition-all" data-brand="Apple">Apple</button>
+    <button class="filter-btn whitespace-nowrap snap-center bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold hover:bg-blue-50 shrink-0 border border-gray-100 transition-all" data-brand="Lenovo">Lenovo</button>
+    <button class="filter-btn whitespace-nowrap snap-center bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold hover:bg-blue-50 shrink-0 border border-gray-100 transition-all" data-brand="ASUS">ASUS</button>
+    <!-- Añade estos dos botones al final de tu lista para forzar el desbordamiento -->
+    <button class="filter-btn whitespace-nowrap snap-center bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold shrink-0 border border-gray-100" data-brand="Dell">Dell</button>
+    <button class="filter-btn whitespace-nowrap snap-center bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold shrink-0 border border-gray-100" data-brand="MSI">MSI</button>
+
+</div>
+
     </div>
   </div>
 </div>
 
 <script>
+  // Tu lógica de filtrado se mantiene igual (está perfecta)
   const searchInput = document.getElementById('text-search') as HTMLInputElement;
   const buttons = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.product-card-container');
 
-  // Función para normalizar texto (quita espacios extra y tildes)
   function normalizar(texto: string) {
     return texto.toLowerCase()
-                .replace(/\s+/g, '') // Quita todos los espacios
-                .normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // Quita tildes
+                .replace(/\s+/g, '')
+                .normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   }
 
   function filtrar() {
@@ -51,7 +62,6 @@
 
     cards.forEach(card => {
       const productCard = card as HTMLElement;
-      // Normalizamos el título de la laptop para que coincida más fácil
       const title = normalizar(productCard.getAttribute('data-title') || '');
       
       const matchesBrand = brandQuery === 'todas' || title.includes(brandQuery);
@@ -59,14 +69,13 @@
 
       if (matchesBrand && matchesText) {
         productCard.style.display = 'block';
-        productCard.classList.add('animate-fade-in'); // Efecto visual
+        productCard.classList.add('animate-fade-in');
       } else {
         productCard.style.display = 'none';
       }
     });
   }
 
-  // Escucha cada tecla (input) y filtra al instante
   searchInput?.addEventListener('input', filtrar);
 
   buttons.forEach(btn => {
@@ -83,11 +92,21 @@
 </script>
 
 <style>
+  /* Tu animación */
   .animate-fade-in {
     animation: fadeIn 0.3s ease-in;
   }
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* El toque para que no se vea la barra gris de scroll */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 </style>

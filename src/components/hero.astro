@@ -1,48 +1,49 @@
 ---
 // Hero.astro
 ---
-<section class="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 py-16 md:py-24 overflow-hidden">
-  <!-- Adorno decorativo de fondo -->
-  <div class="absolute top-0 right-0 -mt-20 -mr-20 opacity-20">
+<section class="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 py-12 md:py-24 overflow-hidden">
+  <!-- Adorno decorativo de fondo (se oculta en móviles muy pequeños para limpiar la vista) -->
+  <div class="absolute top-0 right-0 -mt-20 -mr-20 opacity-10 hidden sm:block">
     <svg width="400" height="400" viewBox="0 0 24 24" fill="none" class="text-white">
         <path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2" stroke="currentColor" stroke-width="1"></path>
     </svg>
   </div>
 
-  <div class="max-w-6xl mx-auto px-6 relative z-10 text-center md:text-left grid md:grid-cols-2 items-center gap-12">
-    <div>
-      <span class="inline-block bg-orange-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full mb-6 shadow-lg">
-        Actualizado 2026
+  <div class="max-w-6xl mx-auto px-6 relative z-10 grid md:grid-cols-2 items-center gap-8 md:gap-12">
+    <!-- TEXTO: Centrado en móvil, izquierda en escritorio -->
+    <div class="text-center md:text-left order-2 md:order-1">
+      <span class="inline-block bg-orange-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full mb-4 shadow-lg">
+        Ofertas Actualizadas
       </span>
-      <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-6">
-        Encuentra la laptop <span class="text-blue-400">perfecta</span> para tu presupuesto
+      <h1 class="text-3xl sm:text-4xl md:text-6xl font-black text-white leading-tight mb-4 md:mb-6">
+        La laptop <span class="text-blue-400 italic">ideal</span> <br class="hidden md:block""")/>> para tu presupuesto
       </h1>
-      <p class="text-lg text-blue-100 mb-8 max-w-lg leading-relaxed">
-        Analizamos y filtramos las mejores ofertas de Amazon para que no pierdas tiempo. Potencia, portabilidad y precio en un solo lugar.
+      <p class="text-base md:text-lg text-blue-100 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed opacity-90">
+        Filtramos las mejores opciones de Amazon. Potencia y precio real para tu próximo equipo.
       </p>
       
+      <!-- BOTONES: Columna en móvil, fila en escritorio -->
       <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-        <a href="#catalogo" class="bg-white text-blue-900 font-bold py-4 px-8 rounded-xl hover:bg-orange-500 hover:text-white transition-all shadow-xl transform active:scale-95 text-center">
-          Ver Catalogo
+        <a href="#catalogo" class="bg-white text-blue-900 font-bold py-3.5 px-8 rounded-xl hover:bg-orange-500 hover:text-white transition-all shadow-xl active:scale-95 text-sm md:text-base">
+          Ver Catálogo
         </a>
-        <a href="/productos/2" class="border-2 border-blue-400 text-white font-bold py-4 px-8 rounded-xl hover:bg-blue-400/10 transition-all text-center">
+        <a href="/productos/2" class="border-2 border-blue-400/50 text-white font-bold py-3.5 px-8 rounded-xl hover:bg-blue-400/10 transition-all text-sm md:text-base">
           Oferta Destacada
         </a>
       </div>
     </div>
 
-    <!-- Imagen o Icono representativo -->
-    <div class="hidden md:flex justify-center items-center">
-      <div class="relative">
-         <div class="absolute inset-0 bg-blue-400 blur-3xl opacity-20 rounded-full"></div>
+    <!-- IMAGEN: Arriba en móvil (order-1), Derecha en escritorio (order-2) -->
+    <div class="flex justify-center order-1 md:order-2">
+      <div class="relative group">
+         <!-- Brillo dinámico -->
+         <div class="absolute inset-0 bg-blue-500 blur-[80px] opacity-20 rounded-full group-hover:opacity-40 transition-opacity"></div>
+         
          <img 
-  src="/hero-laptop.png" 
-  alt="Laptop Destacada" 
-  class="relative z-10 w-full max-w-[210px] h-auto drop-shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-700"
-   
-/>
-
-
+            src="/hero-laptop.png" 
+            alt="Laptop Destacada" 
+            class="relative z-10 w-full max-w-[240px] sm:max-w-[320px] md:max-w-[400px] drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)] rotate-2 md:rotate-3 hover:rotate-0 transition-transform duration-700 ease-out"
+         />
       </div>
     </div>
   </div>
