@@ -1,12 +1,27 @@
 ---
 import '../styles/global.css';
+import Card from '../components/card.astro';
+import products from '../data/products.json'; // Astro importa el JSON directo
 ---
 
-<div class="bg-blue-600 p-20">
-  <h1 class="text-white text-5xl font-bold text-center">
-    SI ESTO TIENE FONDO AZUL, ¡VENCIMOS! 🚀
-  </h1>
-</div>
+<main class="max-w-6xl mx-auto p-10">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+   {products.map((pc) => (
+      <Card 
+        id={pc.id}        /* <-- AÑADE ESTO PARA EL ENLACE DINÁMICO */
+        title={pc.nombre} 
+        price={pc.precio} 
+        specs={pc.specs} 
+        img={pc.imagen} 
+        link={pc.link} 
+      />
+    ))}
+
+  </div>
+</main>
+
+
 
 <footer class="mt-20 py-10 border-t border-gray-200 bg-gray-100">
   <div class="max-w-6xl mx-auto px-4 text-center">

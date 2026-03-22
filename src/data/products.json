@@ -1,29 +1,218 @@
 [
   {
-    "id": "1",
-    "nombre": "Acer Nitro V Gaming Laptop",
-    "specs": "Intel Core i5-13420H, RTX 4050, 8GB DDR5, 512GB SSD",
-    "precio": "749.99",
-    "link": "https://amzn.to",
-    "imagen": "https://amzn.to/4lDeXqd",
-    "categoria": "Gaming"
-  },
-  {
     "id": "2",
-    "nombre": "ASUS Vivobook 16 Laptop",
-    "specs": "Intel Core i7-1255U, 16GB RAM, 512GB SSD",
-    "precio": "599.00",
-    "link": "https://amzn.to",
-    "imagen": "https://amzn.to/4lDeXqd",
-    "categoria": "Oficina"
+    "nombre": "acer Aspire 14 AI Copilot+ PC | Pantalla WUXGA de 14 pulgadas | Procesador Intel Core Ultra 5 de 226 V | NPU: hasta 40 tops - GPU: hasta 53 tops | Intel ARC 130V | 16 GB LPDDR5X | SSD de 512 GB | Wi-Fi 6E | A14-52M-52M-5 1S1",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$499.99",
+    "link": "https://www.amazon.com/-/es/sspa/click?ie=UTF8&spc=MTo2MTY4NDUzMjg3MzE3ODc5OjE3NzQxMjM0ODY6c3BfYXRmOjMwMTIwMzcyNjAwMTYwMjo6MDo6&url=%2Facer-Copilot-Pantalla-pulgadas-Procesador%2Fdp%2FB0DWNLN3KP%2Fref%3Dsr_1_1_sspa%3F__mk_es_US%3D%25C3%2585M%25C3%2585%25C5%25BD%25C3%2595%25C3%2591%26crid%3D3A1LPI65I0BKK%26dib%3DeyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o%26dib_tag%3Dse%26keywords%3Dlaptops%2Bbaratas%26qid%3D1774123485%26sprefix%3Dlaptops%2Bbaratas%252Caps%252C282%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/712S6q+GQjL._AC_UY218_.jpg",
+    "categoria": "Laptop"
   },
   {
     "id": "3",
-    "nombre": "SAMSUNG 14\" Galaxy Book4",
-    "specs": "Intel Core 7, 16GB RAM, 512GB SSD, Pantalla FHD",
-    "precio": "849.00",
-    "link": "https://amzn.to",
-    "imagen": "https://amzn.to/4lDeXqd",
-    "categoria": "Premium"
+    "nombre": "acer Aspire Go 15 AI Ready Laptop | Pantalla FHD IPS de 15.6 pulgadas | AMD Ryzen 3 7320U | Gráficos AMD Radeon 610M | 8 GB LPDDR5 | SSD PCIe de 128 GB | Wi-Fi 6 | Windows 11 Home en modo S | AG15",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$299.99",
+    "link": "https://www.amazon.com/-/es/sspa/click?ie=UTF8&spc=MTo2MTY4NDUzMjg3MzE3ODc5OjE3NzQxMjM0ODY6c3BfYXRmOjMwMTIwMzcyNjAwMTQwMjo6MDo6&url=%2Facer-Pantalla-pulgadas-Gr%25C3%25A1ficos-Windows%2Fdp%2FB0FN9JLD28%2Fref%3Dsr_1_2_sspa%3F__mk_es_US%3D%25C3%2585M%25C3%2585%25C5%25BD%25C3%2595%25C3%2591%26crid%3D3A1LPI65I0BKK%26dib%3DeyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o%26dib_tag%3Dse%26keywords%3Dlaptops%2Bbaratas%26qid%3D1774123485%26sprefix%3Dlaptops%2Bbaratas%252Caps%252C282%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/71KdVuqcf+L._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "4",
+    "nombre": "Coolby Portátil de 15.6 pulgadas, 12 GB de RAM/256 GB SSD, pantalla IPS de 1920 x 1080, Intel N95 (Beats N5095) Computadora portátil de cuatro núcleos, compatible con huellas dactilares, WiFi 5, BT",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$259.00",
+    "link": "https://www.amazon.com/-/es/Coolby-Port%C3%A1til-Computadora-compatible-dactilares/dp/B0CRR6YQ6N/ref=sr_1_3?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-3&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/71mRF1J4y1L._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "5",
+    "nombre": "Laptop HP Stream 14\" HD, procesador Intel N150, 4 GB RAM, 128 GB UFS, gráficos Intel, webcam, Wi-Fi 6, Copilot, carga rápida, Windows 11, plateado (renovado)",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "Consultar",
+    "link": "https://www.amazon.com/-/es/HP-Stream-procesador-gr%C3%A1ficos-plateado/dp/B0G2WT12HL/ref=sr_1_4?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-4&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/71V9Q6KfAIL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "6",
+    "nombre": "Phatom Computadoras portátiles FHD de 15.6\", compatibles con Windows 11, Pentium Gold (Beats Pentium, Celeron), ventilador de refrigeración, 4 GB de RAM, 128 GB SSD, hasta 2 TB, HDMI, para negocios, estudiantes",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$199.99",
+    "link": "https://www.amazon.com/s?k=laptops+baratas&__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&sprefix=laptops+baratas%2Caps%2C282&ref=nb_sb_noss_1#&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/71CaJNgo8TL._AC_UL320_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "8",
+    "nombre": "Laptop para juegos de 15.6 pulgadas i5-7Y54 (hasta 3.20 GHz), computadora portátil de negocios para 16 GB RAM 1TB SSD, pantalla Full HD 1920X1080, teclado retroiluminado de apertura de ángulo de 180",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$319.99",
+    "link": "https://www.amazon.com/-/es/sspa/click?ie=UTF8&spc=MTo2MTY4NDUzMjg3MzE3ODc5OjE3NzQxMjM0ODY6c3BfbXRmOjMwMTE2MjExMjI1NzUwMjo6MDo6&url=%2Fpulgadas-computadora-port%25C3%25A1til-1920X1080-retroiluminado%2Fdp%2FB0FZV7STQ6%2Fref%3Dsr_1_5_sspa%3F__mk_es_US%3D%25C3%2585M%25C3%2585%25C5%25BD%25C3%2595%25C3%2591%26crid%3D3A1LPI65I0BKK%26dib%3DeyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o%26dib_tag%3Dse%26keywords%3Dlaptops%2Bbaratas%26qid%3D1774123485%26sprefix%3Dlaptops%2Bbaratas%252Caps%252C282%26sr%3D8-5-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/71uayJxb4HL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "9",
+    "nombre": "Computadora portátil de 15.6 pulgadas, 16 GB de RAM 512 GB SSD, procesador de hasta 3.4 GHz, pantalla FHD IPS, WiFi 5, tipo C, portátil delgada para estudiantes, trabajo y oficina en casa",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$279.99",
+    "link": "https://www.amazon.com/-/es/sspa/click?ie=UTF8&spc=MTo2MTY4NDUzMjg3MzE3ODc5OjE3NzQxMjM0ODY6c3BfbXRmOjMwMTIwOTkyNjE1OTEwMjo6MDo6&url=%2FCUBIBUC-Computadora-port%25C3%25A1til-procesador-estudiantes%2Fdp%2FB0G7FND94V%2Fref%3Dsr_1_6_sspa%3F__mk_es_US%3D%25C3%2585M%25C3%2585%25C5%25BD%25C3%2595%25C3%2591%26crid%3D3A1LPI65I0BKK%26dib%3DeyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o%26dib_tag%3Dse%26keywords%3Dlaptops%2Bbaratas%26qid%3D1774123485%26sprefix%3Dlaptops%2Bbaratas%252Caps%252C282%26sr%3D8-6-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/61dMbHXtKFL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "10",
+    "nombre": "HP 14 portátil, Intel Celeron N4020, 4 GB de RAM, 64 GB de almacenamiento, pantalla Micro-edge HD de 14 pulgadas, Windows 11 Home, delgada y portátil, gráficos 4K, un año de Microsoft 365 (14-dq0040nr",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$184.00",
+    "link": "https://www.amazon.com/-/es/HP-almacenamiento-Micro-edge-Microsoft-14-dq0040nr/dp/B0947BJ67M/ref=sr_1_7?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-7&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/815uX7wkOZS._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "11",
+    "nombre": "Phatom Computadoras portátiles FHD de 15.6\", compatibles con Windows 11, Pentium Gold (Beats Pentium, Celeron), ventilador de refrigeración, 4 GB de RAM, 128 GB SSD, hasta 2 TB, HDMI, para negocios, estudiantes",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$199.99",
+    "link": "https://www.amazon.com/-/es/Phatom-Computadoras-compatibles-refrigeraci%C3%B3n-estudiantes/dp/B0FS1V6XZD/ref=sr_1_8?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-8&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/71CaJNgo8TL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "12",
+    "nombre": "Computadora portátil Win11 Pro de 15.6 pulgadas con procesador 4425Y, 16 GB de RAM 256 GB SSD, MS Office 365, pantalla 100% sRGB, portátil, WiFi de doble banda, BT5.0, USB-A, HDMI, pantalla",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$279.99",
+    "link": "https://www.amazon.com/-/es/sspa/click?ie=UTF8&spc=MTo2MTY4NDUzMjg3MzE3ODc5OjE3NzQxMjM0ODY6c3BfbXRmOjMwMTE2NDIzMTIyNTUwMjo6MDo6&url=%2FHYPERSTRIX-Computadora-port%25C3%25A1til-pulgadas-procesador%2Fdp%2FB0G8TGHVXJ%2Fref%3Dsr_1_9_sspa%3F__mk_es_US%3D%25C3%2585M%25C3%2585%25C5%25BD%25C3%2595%25C3%2591%26crid%3D3A1LPI65I0BKK%26dib%3DeyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o%26dib_tag%3Dse%26keywords%3Dlaptops%2Bbaratas%26qid%3D1774123485%26sprefix%3Dlaptops%2Bbaratas%252Caps%252C282%26sr%3D8-9-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/712i1TcKlPL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "13",
+    "nombre": "Computadoras portátiles FHD de 14 pulgadas, portátil con Gold 6500Y (hasta 3.4 GHz), 16 GB de RAM, SSD de 512 GB, Type-C, HDMI, USB 3.2, WiFi, Bluetooth, batería de larga duración, portátiles",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$289.99",
+    "link": "https://www.amazon.com/-/es/sspa/click?ie=UTF8&spc=MTo2MTY4NDUzMjg3MzE3ODc5OjE3NzQxMjM0ODY6c3BfbXRmOjMwMTIwMDIxMzc3ODAwMjo6MDo6&url=%2FSHBIV-Computadoras-port%25C3%25A1tiles-pulgadas-Bluetooth%2Fdp%2FB0G3QLYN52%2Fref%3Dsr_1_10_sspa%3F__mk_es_US%3D%25C3%2585M%25C3%2585%25C5%25BD%25C3%2595%25C3%2591%26crid%3D3A1LPI65I0BKK%26dib%3DeyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o%26dib_tag%3Dse%26keywords%3Dlaptops%2Bbaratas%26qid%3D1774123485%26sprefix%3Dlaptops%2Bbaratas%252Caps%252C282%26sr%3D8-10-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/611sCsW+n9L._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "14",
+    "nombre": "Dell Latitude 5420 Computadora portátil de negocios FHD de 14 pulgadas, Intel Quad-Core i5-1145G7, 16 GB DDR4 RAM, 256 GB SSD, cámara, HDMI, Windows 11 Pro (renovado)",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "Consultar",
+    "link": "https://www.amazon.com/-/es/Dell-Latitude-5420-Computadora-Quad-Core/dp/B0F53SQRH4/ref=sr_1_11?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-11&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/616jxxM4VLL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "15",
+    "nombre": "Acer Aspire Go 15 AI Ready Laptop | Pantalla IPS FHD de 15.6 pulgadas (1920 x 1080), procesador Intel Core 3 N355, gráficos Intel, DDR5 de 8 GB, UFS de 128 GB, Wi-Fi 6, Windows 11 Home en modo S, AG15",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$279.95",
+    "link": "https://www.amazon.com/-/es/Pantalla-pulgadas-procesador-gr%C3%A1ficos-Windows/dp/B0DT7FC9B7/ref=sr_1_12?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-12&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/71H8XhwlwpL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "16",
+    "nombre": "Laptop de 15.6 pulgadas, portátil 2026, 16 GB de RAM 512 GB SSD, procesador N150 (hasta 3.6 GHz), computadora portátil con batería de 5000 mAh, pantalla IPS Full HD, Win 11 Pro - para negocios y",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$358.99",
+    "link": "https://www.amazon.com/-/es/pulgadas-port%C3%A1til-procesador-computadora-pantalla/dp/B0GJRLH938/ref=sr_1_13?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-13&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/71qgTR6hPcL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "17",
+    "nombre": "HP Laptop Chromebook 14, Intel Celeron N4120, 4 GB de RAM, 64 GB eMMC, pantalla HD de 14 pulgadas, Chrome OS, diseño delgado, gráficos 4K, batería de larga duración, teclado gris ceniza (14a-na0226nr",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$182.99",
+    "link": "https://www.amazon.com/-/es/HP-Chromebook-pantalla-pulgadas-14a-na0226nr/dp/B09SVSBVP1/ref=sr_1_14?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-14&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/71tXLOE7wIL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "18",
+    "nombre": "Laptop de 15.6 pulgadas con Pentium Gold 6500Y (hasta 3.4GHz), 16GB RAM 256GB SSD, 1080P Full HD, USB-C, WiFi 5, BT5.0, computadoras portátiles grises para la escuela, negocios",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$259.00",
+    "link": "https://www.amazon.com/-/es/Zrasu-pulgadas-computadoras-port%C3%A1tiles-negocios/dp/B0FNWCCHXT/ref=sr_1_15?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-15&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/71mJ8KvW8qL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "19",
+    "nombre": "Lenovo IdeaPad 3i Chromebook, pantalla FHD de 15.6\", Intel Celeron N4500, 8 GB de RAM, 64 GB eMMC, 1920 x 1080 px, cámara de 720p, Chrome OS, azul abismo",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$219.00",
+    "link": "https://www.amazon.com/-/es/Lenovo-IdeaPad-Chromebook-pantalla-Celeron/dp/B0BSJ46KY9/ref=sr_1_16?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-16&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/71bwzCMcQvL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "20",
+    "nombre": "HP Chromebook 11A G8 Edición para Educación AMD A4-9120C 4 GB DDR4-1866 SDRAM, 32 GB eMMC 11.6 pulgadas WLED HD Webcam SO Chrome (Renovado)",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "Consultar",
+    "link": "https://www.amazon.com/-/es/HP-Chromebook-Educaci%C3%B3n-A4-9120C-DDR4-1866/dp/B08NHSPCR6/ref=sr_1_17?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-17&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/81LUKMXGZJL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "21",
+    "nombre": "Laptop HP Stream 14\" HD BrightView, Intel Celeron N150, 16 GB de RAM, 288 GB de almacenamiento (128 GB eMMC + 160 GB conjunto de estación de acoplamiento), gráficos Intel UHD, cámara web 720p, Wi-Fi",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$359.00",
+    "link": "https://www.amazon.com/-/es/HP-Stream-BrightView-almacenamiento-acoplamiento/dp/B0CZKPF2QH/ref=sr_1_18?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-18&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/71bg--zkvSL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "22",
+    "nombre": "Computadora portátil de 14 pulgadas, 8 GB DDR4 RAM 128 GB SSD, procesador de 4 núcleos (hasta 2.9 GHz), PC portátil delgada y portátil, Win11 Pro, WiFi, BT4.2",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$189.99",
+    "link": "https://www.amazon.com/-/es/MARGOLAI-Computadora-port%C3%A1til-pulgadas-procesador/dp/B0D8B4C665/ref=sr_1_19?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-19&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/61xvs4SEOvL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "23",
+    "nombre": "HP Stream 14\" Laptop HD BrightView de 14 pulgadas, Procesador Intel N150, 16 GB de RAM, 416 GB de almacenamiento (128 GB eMMC + 288 GB conjunto de estación de acoplamiento), gráficos Intel UHD, cámara",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$359.00",
+    "link": "https://www.amazon.com/-/es/HP-Stream-14-almacenamiento-acoplamiento/dp/B0DC6KMWJS/ref=sr_1_20?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-20&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/71M0XnAX3qL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "24",
+    "nombre": "HP Laptop Chromebook HD de 14 pulgadas para estudiantes, Intel Quad-Core N4120 (> N4020), 4 GB de RAM, 64 GB eMMC, WiFi, cámara web, HDMI, USB-A y C, 14 horas de duración de la batería, ZOOM, Chrome",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$162.77",
+    "link": "https://www.amazon.com/-/es/HP-Chromebook-pulgadas-estudiantes-Quad-Core/dp/B0C8171GTK/ref=sr_1_21?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-21&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/61s595ANBTL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "25",
+    "nombre": "HP Laptop Stream HD de 14 pulgadas, procesador Intel Celeron, memoria de 4 GB, almacenamiento eMMC de 64 GB, carga rápida, HDMI, batería de hasta 11 horas de duración, Office 365 1 año, Win 11 S",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$183.99",
+    "link": "https://www.amazon.com/-/es/HP-Laptop-pulgadas-procesador-almacenamiento/dp/B0C5S8626M/ref=sr_1_22?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&dib=eyJ2IjoiMSJ9.V9NRDmz2C36jsRuK95wmkN8ahy7Vpqj-KIXayMiX99bWiWiqwgIzZvMIJz9xrrjq4fSBfLpv7rlop9AST3tToCaoXCdJd_jKtbxcGBbpTGeI0gancYE4DpUW4d5Umb5xzwytyoLPVGf9ICCv_GMSSMH1JW_-ocHAOHndiD6FdGbXQZ71CpRQLhDtL_B2girWfpM_XafvNPAZY37fv18BjUirmpw8sxcsJTpojUBopbo.WMDKTEYWLeuxs_lcU0n0a63HII0je2qytJVl4PjFg9o&dib_tag=se&keywords=laptops+baratas&qid=1774123485&sprefix=laptops+baratas%2Caps%2C282&sr=8-22&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/51qhN7a-AgL._AC_UY218_.jpg",
+    "categoria": "Laptop"
+  },
+  {
+    "id": "26",
+    "nombre": "| De las tiendas de Influencers de Amazon",
+    "specs": "Ver especificaciones en Amazon",
+    "precio": "US$499.99",
+    "link": "https://www.amazon.com/s?k=laptops+baratas&__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3A1LPI65I0BKK&sprefix=laptops+baratas%2Caps%2C282&ref=nb_sb_noss_1#&tag=tu-tag-20",
+    "imagen": "https://m.media-amazon.com/images/I/712S6q+GQjL._AC_UL320_.jpg",
+    "categoria": "Laptop"
   }
 ]

@@ -1,0 +1,58 @@
+---
+// 1. Importas tus datos
+import products from '../../data/products.json'; // Mueve products.json a src/data/ y ajusta la ruta
+
+// 2. Le dices a Astro qué páginas crear basándose en el ID
+export async function getStaticPaths() {
+  return products.map((product) => ({
+    params: { id: product.id.toString() }, // El ID debe ser un texto
+    props: { product },
+  }));
+}
+
+// 3. Recibes los datos de la laptop específica para esta página
+const { product } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>{product.nombre}</title>
+  </head>
+  <body class="bg-gray-50">
+    <main class="max-w-5xl mx-auto p-8 mt-10 bg-white shadow-lg rounded-xl">
+      <div class="grid md:grid-cols-2 gap-10">
+        
+        <!-- Lado Izquierdo: Imagen -->
+        <div class="flex justify-center items-center">
+          <img src={product.imagen} alt={product.nombre} class="w-full h-auto object-contain" />
+        </div>
+
+        <!-- Lado Derecho: Info -->
+        <div class="flex flex-col justify-center">
+          <span class="text-sm text-blue-600 font-bold uppercase tracking-widest">{product.categoria}</span>
+          <h1 class="text-2xl font-bold text-gray-800 mt-2 mb-4 leading-tight">
+            {product.nombre}
+          </h1>
+          <p class="text-4xl font-black text-orange-500 mb-6">{product.precio}</p>
+          
+          <!-- BOTÓN DE AFILIADO -->
+          <a href={product.link} 
+             target="_blank" 
+             rel="nofollow sponsored" 
+             class="text-center bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-4 px-8 rounded-lg shadow-md transform transition hover:scale-105">
+             🚀 Ver Oferta en Amazon
+          </a>
+
+          <p class="mt-6 text-sm text-gray-500 italic">
+            * {product.specs}
+          </p>
+        </div>
+      </div>
+      
+      <div class="mt-10 text-center">
+        <a href="/" class="text-blue-500 hover:underline">← Volver al catálogo</a>
+      </div>
+    </main>
+  </body>
+</html>
