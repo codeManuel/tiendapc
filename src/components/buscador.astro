@@ -2,68 +2,92 @@
 // buscador.astro
 ---
 <div class="max-w-6xl mx-auto px-10 mb-10 -mt-8 relative z-20">
-  <div class="bg-white p-4 rounded-2xl shadow-xl border border-gray-100 flex flex-wrap gap-3 justify-center items-center">
-    <span class="text-xs font-black text-gray-400 uppercase tracking-widest mr-2 text-gray-400">Filtrar por:</span>
+  <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 space-y-6">
     
-    <button class="filter-btn active bg-blue-600 text-white px-5 py-2 rounded-xl text-xs font-bold shadow-lg transition-all" data-brand="todas">
-      Todas
-    </button>
-    <button class="filter-btn bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold hover:bg-blue-50 transition-all border border-transparent hover:border-blue-200" data-brand="Acer">
-      Acer
-    </button>
-    <button class="filter-btn bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold hover:bg-blue-50 transition-all border border-transparent hover:border-blue-200" data-brand="HP">
-      HP
-    </button>
-    <button class="filter-btn bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold hover:bg-blue-50 transition-all border border-transparent hover:border-blue-200" data-brand="Apple">
-      Apple
-    </button>
-    <button class="filter-btn bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold hover:bg-blue-50 transition-all border border-transparent hover:border-blue-200" data-brand="ASUS">
-      ASUS
-    </button>
+    <!-- BUSCADOR DE TEXTO LIBRE -->
+    <div class="relative max-w-2xl mx-auto">
+      <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+        <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+      </div>
+      <input 
+        type="text" 
+        id="text-search" 
+        placeholder="Busca por modelo, procesador, RAM (ej: Ryzen 7, 16GB)..." 
+        class="block w-full pl-10 pr-3 py-4 border border-gray-200 rounded-xl leading-5 bg-gray-50 placeholder-gray-400 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all sm:text-sm"
+      />
+    </div>
+
+    <!-- SELECTOR DE MARCAS (Tus botones actuales) -->
+    <div class="flex flex-wrap gap-2 justify-center items-center pt-2 border-t border-gray-50">
+      <span class="text-[10px] font-black text-gray-400 uppercase tracking-widest mr-2">O filtra por marca:</span>
+      <button class="filter-btn active bg-blue-600 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-md" data-brand="todas">Todas</button>
+      <button class="filter-btn bg-gray-50 text-gray-600 px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-50" data-brand="Acer">Acer</button>
+      <button class="filter-btn bg-gray-50 text-gray-600 px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-50" data-brand="HP">HP</button>
+      <button class="filter-btn bg-gray-50 text-gray-600 px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-50" data-brand="Apple">Apple</button>
+      <button class="filter-btn bg-gray-50 text-gray-600 px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-50" data-brand="Lenovo">Lenovo</button>
+      <button class="filter-btn bg-gray-50 text-gray-600 px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-50" data-brand="ASUS">ASUS</button>
+    </div>
   </div>
 </div>
 
 <script>
+  const searchInput = document.getElementById('text-search') as HTMLInputElement;
   const buttons = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.product-card-container');
 
+  // Función para normalizar texto (quita espacios extra y tildes)
+  function normalizar(texto: string) {
+    return texto.toLowerCase()
+                .replace(/\s+/g, '') // Quita todos los espacios
+                .normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // Quita tildes
+  }
+
+  function filtrar() {
+    const textQuery = normalizar(searchInput.value);
+    const activeBtn = document.querySelector('.filter-btn.active') as HTMLElement;
+    const brandQuery = normalizar(activeBtn?.getAttribute('data-brand') || 'todas');
+
+    cards.forEach(card => {
+      const productCard = card as HTMLElement;
+      // Normalizamos el título de la laptop para que coincida más fácil
+      const title = normalizar(productCard.getAttribute('data-title') || '');
+      
+      const matchesBrand = brandQuery === 'todas' || title.includes(brandQuery);
+      const matchesText = title.includes(textQuery);
+
+      if (matchesBrand && matchesText) {
+        productCard.style.display = 'block';
+        productCard.classList.add('animate-fade-in'); // Efecto visual
+      } else {
+        productCard.style.display = 'none';
+      }
+    });
+  }
+
+  // Escucha cada tecla (input) y filtra al instante
+  searchInput?.addEventListener('input', filtrar);
+
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Usamos la sugerencia de VS Code para manejar nulos de forma segura
-      const brand = (btn.getAttribute('data-brand') ?? '').toLowerCase();
-      
-      // Contamos cuántas cards quedan visibles después del filtro
-      const visibleCards = document.querySelectorAll('.product-card-container[style="display: block;"]').length;
-        const noResults = document.getElementById('no-results');
-      
-      // Estilo de botones: Limpiamos todos primero
       buttons.forEach(b => {
-        b.classList.remove('bg-blue-600', 'text-white', 'shadow-lg');
+        b.classList.remove('bg-blue-600', 'text-white', 'active', 'shadow-md');
         b.classList.add('bg-gray-50', 'text-gray-600');
       });
-      
-      // Activamos el botón que recibió el click
-      btn.classList.add('bg-blue-600', 'text-white', 'shadow-lg');
+      btn.classList.add('bg-blue-600', 'text-white', 'active', 'shadow-md');
       btn.classList.remove('bg-gray-50', 'text-gray-600');
-
-      // Lógica de filtrado en las cards
-      cards.forEach(card => {
-        const dataTitle = card.getAttribute('data-title');
-        const title = dataTitle ? dataTitle.toLowerCase() : '';
-        
-        // El (card as HTMLElement) es necesario para que TypeScript permita tocar el .style
-        if (brand === 'todas' || title.includes(brand)) {
-          (card as HTMLElement).style.display = 'block';
-        } else {
-          (card as HTMLElement).style.display = 'none';
-        }
-      });
-      // Mostramos mensaje si no hay resultados
-      if (visibleCards === 0 && brand !== 'todas') {
-        noResults?.classList.remove('hidden');
-        } else {
-        noResults?.classList.add('hidden');
-            }
+      filtrar();
     });
   });
 </script>
+
+<style>
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-in;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
