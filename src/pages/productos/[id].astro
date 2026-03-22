@@ -1,39 +1,71 @@
 ---
-// 1. Importas tus datos
-import products from '../../data/products.json'; // Mueve products.json a src/data/ y ajusta la ruta
+// 1. Importaciones
+import products from '../../data/products.json';
 import Header from '../../components/header.astro';
 
-
-// 2. Le dices a Astro qué páginas crear basándose en el ID
+// 2. Rutas dinámicas
 export async function getStaticPaths() {
   return products.map((product) => ({
-    params: { id: product.id.toString() }, // El ID debe ser un texto
+    params: { id: product.id.toString() },
     props: { product },
   }));
 }
 
-// 3. Recibes los datos de la laptop específica para esta página
+// 3. Datos y SEO
 const { product } = Astro.props;
+const seoTitle = `${product.nombre.slice(0, 60)}... | Oferta Amazon`;
+const seoDescription = `Compra la laptop ${product.nombre.slice(0, 50)} al mejor precio. Specs: ${product.specs}.`;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://tu-tienda.com');
 ---
-<Header />
+
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>{product.nombre}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    
+    <!-- SEO Básico -->
+    <title>{seoTitle}</title>
+    <meta name="description" content={seoDescription} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph (Redes Sociales) -->
+    <meta property="og:type" content="product" />
+    <meta property="og:title" content={seoTitle} />
+    <meta property="og:description" content={seoDescription} />
+    <meta property="og:image" content={product.imagen} />
+    <meta property="og:url" content={canonicalURL} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={seoTitle} />
+    <meta name="twitter:description" content={seoDescription} />
+    <meta name="twitter:image" content={product.imagen} />
   </head>
+
   <body class="bg-gray-50">
-    <main class="max-w-5xl mx-auto p-8 mt-10 bg-white shadow-lg rounded-xl">
+    <!-- El Header debe ir AQUÍ, dentro del body -->
+    <Header />
+
+    <main class="max-w-5xl mx-auto p-8 mt-10 bg-white shadow-lg rounded-xl mb-20">
       <div class="grid md:grid-cols-2 gap-10">
         
         <!-- Lado Izquierdo: Imagen -->
-        <div class="flex justify-center items-center">
-          <img src={product.imagen} alt={product.nombre} class="w-full h-auto object-contain" />
+        <div class="flex justify-center items-center p-4 bg-gray-50 rounded-xl">
+          <img 
+            src={product.imagen} 
+            alt={product.nombre} 
+            class="w-full h-auto object-contain hover:scale-105 transition-transform duration-500" 
+          />
         </div>
 
         <!-- Lado Derecho: Info -->
         <div class="flex flex-col justify-center">
-          <span class="text-sm text-blue-600 font-bold uppercase tracking-widest">{product.categoria}</span>
-          <h1 class="text-2xl font-bold text-gray-800 mt-2 mb-4 leading-tight">
+          <nav class="text-xs text-gray-400 mb-4">
+             <a href="/" class="hover:underline">Inicio</a> / <span class="text-blue-600">{product.categoria}</span>
+          </nav>
+          <span class="text-xs text-blue-600 font-bold uppercase tracking-widest bg-blue-50 w-fit px-2 py-1 rounded mb-2">{product.categoria}</span>
+          <h1 class="text-2xl font-black text-gray-800 mt-2 mb-4 leading-tight">
             {product.nombre}
           </h1>
           <p class="text-4xl font-black text-orange-500 mb-6">{product.precio}</p>
@@ -46,14 +78,19 @@ const { product } = Astro.props;
              🚀 Ver Oferta en Amazon
           </a>
 
-          <p class="mt-6 text-sm text-gray-500 italic">
-            * {product.specs}
-          </p>
+          <div class="mt-8 border-t pt-6 text-gray-600">
+            <h3 class="font-bold text-gray-800 mb-2">Detalles destacados:</h3>
+            <p class="text-sm italic leading-relaxed">
+              {product.specs}
+            </p>
+          </div>
         </div>
       </div>
       
-      <div class="mt-10 text-center">
-        <a href="/" class="text-blue-500 hover:underline">← Volver al catálogo</a>
+      <div class="mt-12 text-center border-t pt-8">
+        <a href="/" class="text-blue-600 font-bold hover:underline inline-flex items-center gap-2">
+          ← Volver al catálogo completo
+        </a>
       </div>
     </main>
   </body>
