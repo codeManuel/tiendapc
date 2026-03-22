@@ -1,26 +1,41 @@
 ---
 import '../styles/global.css';
 import Header from '../components/header.astro';
+import Hero from '../components/hero.astro';
+import Buscador from '../components/buscador.astro';
 import Card from '../components/card.astro';
 import products from '../data/products.json'; // Astro importa el JSON directo
 ---
 <Header />
-<main class="max-w-6xl mx-auto p-10">
+<Hero />
+<Buscador />
+
+<main id="catalogo" class="max-w-6xl mx-auto p-10 scroll-mt-24">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     
    {products.map((pc) => (
-      <Card 
-        id={pc.id}        /* <-- AÑADE ESTO PARA EL ENLACE DINÁMICO */
-        title={pc.nombre} 
-        price={pc.precio} 
-        specs={pc.specs} 
-        img={pc.imagen} 
-        link={pc.link} 
-      />
+      /* ESTA ES LA PIEZA QUE FALTA: El contenedor para el filtro */
+      <div class="product-card-container" data-title={pc.nombre}>
+        <Card 
+          id={pc.id}
+          title={pc.nombre} 
+          price={pc.precio} 
+          specs={pc.specs} 
+          img={pc.imagen} 
+          link={pc.link} 
+        />
+      </div>
     ))}
+
+    <div id="no-results" class="hidden text-center py-20">
+  <p class="text-xl text-gray-400 font-medium italic">No encontramos laptops de esta marca por ahora...</p>
+  <button onclick="location.reload()" class="mt-4 text-blue-600 underline">Ver todas las ofertas</button>
+</div>
+
 
   </div>
 </main>
+
 
 
 

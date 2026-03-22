@@ -1,0 +1,69 @@
+---
+// buscador.astro
+---
+<div class="max-w-6xl mx-auto px-10 mb-10 -mt-8 relative z-20">
+  <div class="bg-white p-4 rounded-2xl shadow-xl border border-gray-100 flex flex-wrap gap-3 justify-center items-center">
+    <span class="text-xs font-black text-gray-400 uppercase tracking-widest mr-2 text-gray-400">Filtrar por:</span>
+    
+    <button class="filter-btn active bg-blue-600 text-white px-5 py-2 rounded-xl text-xs font-bold shadow-lg transition-all" data-brand="todas">
+      Todas
+    </button>
+    <button class="filter-btn bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold hover:bg-blue-50 transition-all border border-transparent hover:border-blue-200" data-brand="Acer">
+      Acer
+    </button>
+    <button class="filter-btn bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold hover:bg-blue-50 transition-all border border-transparent hover:border-blue-200" data-brand="HP">
+      HP
+    </button>
+    <button class="filter-btn bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold hover:bg-blue-50 transition-all border border-transparent hover:border-blue-200" data-brand="Apple">
+      Apple
+    </button>
+    <button class="filter-btn bg-gray-50 text-gray-600 px-5 py-2 rounded-xl text-xs font-bold hover:bg-blue-50 transition-all border border-transparent hover:border-blue-200" data-brand="ASUS">
+      ASUS
+    </button>
+  </div>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.product-card-container');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Usamos la sugerencia de VS Code para manejar nulos de forma segura
+      const brand = (btn.getAttribute('data-brand') ?? '').toLowerCase();
+      
+      // Contamos cuántas cards quedan visibles después del filtro
+      const visibleCards = document.querySelectorAll('.product-card-container[style="display: block;"]').length;
+        const noResults = document.getElementById('no-results');
+      
+      // Estilo de botones: Limpiamos todos primero
+      buttons.forEach(b => {
+        b.classList.remove('bg-blue-600', 'text-white', 'shadow-lg');
+        b.classList.add('bg-gray-50', 'text-gray-600');
+      });
+      
+      // Activamos el botón que recibió el click
+      btn.classList.add('bg-blue-600', 'text-white', 'shadow-lg');
+      btn.classList.remove('bg-gray-50', 'text-gray-600');
+
+      // Lógica de filtrado en las cards
+      cards.forEach(card => {
+        const dataTitle = card.getAttribute('data-title');
+        const title = dataTitle ? dataTitle.toLowerCase() : '';
+        
+        // El (card as HTMLElement) es necesario para que TypeScript permita tocar el .style
+        if (brand === 'todas' || title.includes(brand)) {
+          (card as HTMLElement).style.display = 'block';
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+      // Mostramos mensaje si no hay resultados
+      if (visibleCards === 0 && brand !== 'todas') {
+        noResults?.classList.remove('hidden');
+        } else {
+        noResults?.classList.add('hidden');
+            }
+    });
+  });
+</script>
