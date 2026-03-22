@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://tu-tienda-laptops.vercel.app',
+  site: 'https://tiendapc.vercel.app/',
   integrations: [sitemap()],
   server: {
     port: 4321,
